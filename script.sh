@@ -15,6 +15,7 @@ case $choise in
 	2) sh ./src/vim.sh;;
 	3) sh ./src/lemp.sh;;
 	4) sh ./src/composer.sh;;
+	5) sh ./src/build_site.sh;;
 	q) exit;;
 	*) printf "Invalid Choice, Please Insert Again\n";read null;;
 esac
