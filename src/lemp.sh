@@ -6,9 +6,9 @@ rpm -Uvh http://rpms.famillecollet.com/enterprise/remi-release-7.rpm || {
 }
 cp ./resources/nginx.repo /etc/yum.repos.d/
 
-yum --enablerepo=remi,remi-php70 install nginx php-fpm php-common -y
+yum --enablerepo=remi,remi-php56 install nginx php-fpm php-common -y
 
-yum --enablerepo=remi,remi-php70 install php-opcache php-pecl-apcu php-cli php-pear php-pdo php-mysqlnd php-gd php-mbstring php-mcrypt php-xml php-yaml -y
+yum --enablerepo=remi,remi-php56 install php-opcache php-pecl-apcu php-cli php-pear php-pdo php-mysqlnd php-gd php-mbstring php-mcrypt php-xml php-yaml -y
 
 systemctl start nginx.service
 systemctl enable nginx.service
