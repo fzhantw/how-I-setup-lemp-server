@@ -1,8 +1,7 @@
 sh ./color.sh
 # Add RPMs
 rpm -Uvh http://rpms.famillecollet.com/enterprise/remi-release-7.rpm || {
-	printf "fail to rpm remi-release-7\n"
-	exit 1
+	printf "fail to rpm remi-release-7\n try to continue\n"
 }
 cp ./resources/nginx.repo /etc/yum.repos.d/
 
